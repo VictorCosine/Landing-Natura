@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(/assets/imgFundo.png);
+  min-height: 80vh; /* ocupa pelo menos 100% da tela */
+  background-size: cover; /* nunca fica menor que a tela */
+  background-position: center; /* centraliza */
+  background-repeat: no-repeat; /* não repete */
+  font-family: "Poppins", sans-serif;
+}
+
+.logo{
+    margin: 25px 0px 0px 150px;
+    width: 100px;
+
+
+}
+
+/* HERO */
+.hero {
+  
+  padding: 60px 20px;
+}
+
+.hero-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  color: #f36b21;
+  margin-bottom: 15px;
+}
+
+.hero h1 span {
+  color: #2e7d32;
+}
+
+.p1 {
+  color: #f36b21;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  max-width: 520px;
+}
+
+.p2 {
+  color: #3d0c0c;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  max-width: 520px;
+}
+
+
+
+.badge {
+  background: rgba(255, 255, 255, 0.15);
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.cta {
+  display: inline-block;
+  background: #2e7d32;
+  color: #fff;
+  padding: 16px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.cta:hover {
+  background: #256628;
+  transform: translateY(-2px);
+}
+
+.hero img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 25px;
+}
+
+/* BENEFÍCIOS */
+.benefits {
+  padding: 70px 20px;
+  background: #fff;
+}
+
+.benefits-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #fafafa;
+  opacity: 0.5;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.card h3 {
+  color: #f36b21;
+  margin-bottom: 10px;
+}
+
+/* COMO FUNCIONA */
+.steps {
+  padding: 70px 20px;
+  background: #f6f6f6;
+  text-align: center;
+}
+
+.steps h2 {
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.steps-container {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.step {
+  background: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.step span {
+  font-size: 2rem;
+  color: #f36b21;
+  font-weight: 700;
+}
+
+/* LÍDER */
+.leader {
+  padding: 70px 20px;
+  background: #fff;
+}
+
+.leader-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.leader h2 {
+  color: #f36b21;
+  margin-bottom: 15px;
+}
+
+.leader ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.leader ul li {
+  margin-bottom: 10px;
+}
+
+.leader img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+/* CTA FINAL */
+.final {
+  background: linear-gradient(135deg, #f36b21, #f6a15b);
+  padding: 70px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.final h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 900px) {
+  .hero-container,
+  .leader-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero img {
+    margin: auto;
+  }
+}

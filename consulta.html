@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seja uma Consultora Natura</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f6f6f6;
+      color: #333;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #f6a15b, #f36b21);
+      padding: 60px 20px;
+    }
+
+    .hero-container {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 2.6rem;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 span { color: #2e7d32; }
+
+    .hero p {
+      color: #fff;
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      max-width: 520px;
+    }
+
+    .badge {
+      background: rgba(255,255,255,0.15);
+      display: inline-block;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .cta {
+      display: inline-block;
+      background: #2e7d32;
+      color: #fff;
+      padding: 16px 32px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    .cta:hover { background: #256628; transform: translateY(-2px); }
+
+    .hero img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 25px;
+    }
+
+    /* BENEFÍCIOS */
+    .benefits { padding: 70px 20px; background: #fff; }
+
+    .benefits-container {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #fafafa;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .card h3 { color: #f36b21; margin-bottom: 10px; }
+
+    /* COMO FUNCIONA */
+    .steps { padding: 70px 20px; background: #f6f6f6; text-align: center; }
+
+    .steps h2 { margin-bottom: 40px; font-size: 2rem; }
+
+    .steps-container {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .step {
+      background: #fff;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .step span { font-size: 2rem; color: #f36b21; font-weight: 700; }
+
+    /* LÍDER */
+    .leader { padding: 70px 20px; background: #fff; }
+
+    .leader-container {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .leader h2 { color: #f36b21; margin-bottom: 15px; }
+
+    .leader ul { list-style: none; margin-top: 15px; }
+
+    .leader ul li { margin-bottom: 10px; }
+
+    .leader img { width: 100%; border-radius: 25px; }
+
+    /* CTA FINAL */
+    .final {
+      background: linear-gradient(135deg, #f36b21, #f6a15b);
+      padding: 70px 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .final h2 { font-size: 2.2rem; margin-bottom: 15px; }
+
+    @media(max-width: 900px) {
+      .hero-container, .leader-container { grid-template-columns: 1fr; text-align: center; }
+      .hero img { margin: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-container">
+      <div>
+        <div class="badge">Não precisa de experiência</div>
+        <h1>Seja uma <span>Consultora Natura</span></h1>
+        <p>Faça parte do meu time e comece a ganhar dinheiro com produtos que todo mundo ama. Tenha apoio de uma líder experiente e cresça com a Natura.</p>
+        <a href="#" class="cta">Seja uma consultora Natura!</a>
+      </div>
+      <img src="sua-imagem.jpg" alt="Líder Natura">
+    </div>
+  </section>
+
+  <section class="benefits">
+    <div class="benefits-container">
+      <div class="card"><h3>Ganhe dinheiro de verdade</h3><p>Venda produtos Natura e receba comissões, prêmios e incentivos exclusivos.</p></div>
+      <div class="card"><h3>Apoio de uma líder de verdade</h3><p>Você não estará sozinha. Te acompanho desde o início com dicas e estratégias.</p></div>
+      <div class="card"><h3>Produtos que vendem sozinhos</h3><p>Marcas reconhecidas e produtos amados pelos clientes.</p></div>
+    </div>
+  </section>
+
+  <section class="steps">
+    <h2>Como funciona?</h2>
+    <div class="steps-container">
+      <div class="step"><span>1</span><p>Faça seu cadastro</p></div>
+      <div class="step"><span>2</span><p>Receba suporte total</p></div>
+      <div class="step"><span>3</span><p>Comece a vender</p></div>
+    </div>
+  </section>
+
+  <section class="leader">
+    <div class="leader-container">
+      <div>
+        <h2>Quem será sua Líder?</h2>
+        <p>Sou Líder Natura e ajudo novas consultoras a conquistarem renda, confiança e crescimento.</p>
+        <ul>
+          <li>✔️ Acompanhamento constante</li>
+          <li>✔️ Estratégias de vendas</li>
+          <li>✔️ Time unido</li>
+        </ul>
+      </div>
+      <img src="sua-imagem-lider.jpg" alt="Líder Natura">
+    </div>
+  </section>
+
+  <section class="final">
+    <h2>Chegou a sua hora de começar</h2>
+    <p>Clique no botão abaixo e venha para o meu time</p>
+    <a href="#" class="cta">Seja uma consultora Natura!</a>
+  </section>
+
+</body>
+</html>
