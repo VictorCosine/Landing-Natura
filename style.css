@@ -148,11 +148,8 @@ body {
 
 .btn-green img {
   position: absolute;
-  left: 30px;   /* distância da borda */
-  bottom: 10px;
-  width: 28px;
-  height: 28px;
-  
+  left: 15px;
+  bottom: 15px;
 }
 
 .btn-pink {
@@ -214,4 +211,14 @@ body {
   100% {
     transform: scale(1);
   }
+}
+
+@media screen and (max-width: 500px) {
+
+
+
+  .btn-green img {
+    display: none;
+  }
+
 }
