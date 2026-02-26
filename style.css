@@ -26,6 +26,11 @@ body {
   margin-bottom: 18px;
 }
 
+.subtitulo{
+  font-size: 18px;
+  font-weight: 400;
+}
+
 .pink {
   background: linear-gradient(
   180deg,
@@ -53,7 +58,10 @@ body {
 
 .cardRevista img {
   margin-top: 20px;
+ 
 }
+
+
 
 
 .gray {
@@ -76,6 +84,11 @@ body {
 .icon {
   max-width: 40px;
   border-radius: 50%;
+   transition: all 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.10);
 }
 
 .desc {
@@ -89,11 +102,18 @@ body {
   background: white;
   border: none;
   padding: 12px 20px;
-  border-radius: 30px;
-  font-weight: bold;
+  border-radius: 40px;
+  font-weight: 500;
   cursor: pointer;
   text-decoration: none;
-  color: black;
+  color: #e45d4d;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  transition: all 0.3s ease;
+}
+
+.btn-white:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.18);
 }
 
 .btn-white.small {
@@ -132,22 +152,32 @@ body {
   bottom: 10px;
   width: 28px;
   height: 28px;
+  
 }
 
 .btn-pink {
   display: block;
   text-align: center;
   background: linear-gradient(
-  180deg,
-  #f07a63 0%,
-  #ea6b57 40%,
-  #e45d4d 100%
-);
+    180deg,
+    #f07a63 0%,
+    #ea6b57 40%,
+    #e45d4d 100%
+  );
   color: white;
   padding: 16px;
-  border-radius: 30px;
+  border-radius: 40px;
   margin-bottom: 14px;
   text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  box-shadow: 0 8px 20px rgba(228, 93, 77, 0.35);
+  transition: all 0.3s ease;
+}
+
+.btn-pink:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(228, 93, 77, 0.45);
 }
 
 .banner {
